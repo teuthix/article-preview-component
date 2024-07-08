@@ -2,7 +2,9 @@
   
 /* notes for what to fix 
 jitters when resizing
-image sizing/cropping */
+image sizing/cropping
+can't get button to work again
+ */
 
   :root {
     --darkest-gray: hsl(217, 19%, 35%);
@@ -26,6 +28,7 @@ image sizing/cropping */
     width: 20rem;
     margin: 1rem;
     border-radius: .8rem;
+    height: 100%;
   }
 
   .img-container {
@@ -42,8 +45,13 @@ image sizing/cropping */
     object-fit: cover;
   }
 
+  .summary {
+    padding: 2rem 2rem .4rem 2rem;
+  }
+
   .card-text {
-    padding: 2rem 2rem 1.5rem 2rem;
+    display: flex;
+    flex-direction: column;
   }
 
   .bold {
@@ -65,20 +73,42 @@ image sizing/cropping */
 
   .profile {
     display: flex;
-    width: 100%;
-    margin-top: 1.8rem;
+    height: 3rem;
+    padding: 1rem 2rem;
     justify-content: space-between;
     align-items: center;
     color: var(--light);
+    /* background-color: var(--darkest-gray); */
   }
 
-  .profile-info {
-    display: flex;
+  .clicked {
+    background-color: var(--darkest-gray);
+    border-radius: 0 0 .8rem .8rem;
+    z-index: 1;
+    overflow: hidden;
+    display: none;
+    height: 3rem;
+  }
+
+  .profile-left {
+    display: flex; 
   }
 
   .profile p {
     margin: 0;
     margin-left: 1rem;
+  }
+
+  .clicked p {
+    color: var(--gray);
+    margin: 0 .2rem 0 0;
+    letter-spacing: .4rem;
+  }
+
+  .clicked .profile-left img {
+    padding: 0 .5rem;
+    width: 1.3rem;
+    height: 1.3rem;
   }
 
   .profile-img {
@@ -90,9 +120,13 @@ image sizing/cropping */
   .btn {
     width: 1.2rem;
     height: 1.2rem;
-    /* background-color: var(--gray); */
     padding: .5rem;
     border-radius: 50%;
+  }
+
+  .clicked .btn {
+    background-color: var(--gray);
+    fill: var(--light);
   }
   
   .attribution { font-size: 11px; text-align: center; }
