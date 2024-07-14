@@ -78,7 +78,6 @@ can't get button to work again
     justify-content: space-between;
     align-items: center;
     color: var(--light);
-    /* background-color: var(--darkest-gray); */
   }
 
   .clicked {
@@ -124,6 +123,10 @@ can't get button to work again
     border-radius: 50%;
   }
 
+  /* .share-container {
+    display: none;
+  } */
+
   .clicked .btn {
     background-color: var(--gray);
     fill: var(--light);
@@ -150,15 +153,57 @@ can't get button to work again
         max-inline-size: 100%;
     }
 
-    .card-text {
-        padding: 2rem 2.5rem;
+    .summary {
+      padding: 2rem 2.5rem 1rem;
     }
 
     h1 {
-        font-size: 1.2rem;
+      font-size: 1.2rem;
     }
 
     .profile {
-        margin-top: 1rem;
+      /* background-color: var(--darkest-gray); */
+      z-index: 1;
     }
+
+    .share-container {
+      background-color: var(--darkest-gray);
+      position: relative;
+      width: 16rem;
+      color: var(--gray);
+      /* margin: 0 .2rem 0 0; */
+      border-radius: 1rem;
+      z-index: 2;
+      left: 16.5rem;
+    }
+
+    .desktop-clicked {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      letter-spacing: .4rem;
+      /* padding: .5rem 2rem; */
+    }
+
+    .desktop-clicked img {
+      padding: 1rem 0 1rem 1rem;
+      width: 1.3rem;
+      height: 1.3rem;
+    }
+
+    .arrow-down {
+      width: 0; 
+      height: 0; 
+      border-left: 15px solid transparent;
+      border-right: 15px solid transparent;
+      
+      border-top: 15px solid var(--darkest-gray);
+      position: absolute;
+      display: flex;
+      left: 6.5rem
+    }
+
+    /* .desktop-clicked p {
+      line-height: normal;
+    } */
   }
