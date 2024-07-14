@@ -127,6 +127,10 @@ can't get button to work again
     display: none;
   } */
 
+  .hidden {
+    display: none;
+  }
+
   .clicked .btn {
     background-color: var(--gray);
     fill: var(--light);
@@ -154,26 +158,30 @@ can't get button to work again
     }
 
     .summary {
-      padding: 2rem 2.5rem 1rem;
+      padding: 2rem 2.5rem 0;
     }
 
     h1 {
       font-size: 1.2rem;
     }
 
+    .card-text {
+      position: relative;
+    }
+
     .profile {
-      /* background-color: var(--darkest-gray); */
-      z-index: 1;
+      padding: .4rem 2rem 2rem;
     }
 
     .share-container {
       background-color: var(--darkest-gray);
-      position: relative;
+      position: absolute;
       width: 16rem;
       color: var(--gray);
       /* margin: 0 .2rem 0 0; */
       border-radius: 1rem;
       z-index: 2;
+      top: 9rem;
       left: 16.5rem;
     }
 
