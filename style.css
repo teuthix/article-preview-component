@@ -14,7 +14,7 @@ can't get button to work again
   }
   
   body {
-    background-color: var(--gray);
+    background-color: var(--light);
     display: flex;
     height: 100vh;
     justify-content: center;
@@ -24,11 +24,12 @@ can't get button to work again
   }
 
   .card {
-    background-color: var(--light);
+    background-color: white;
     width: 20rem;
     margin: 1rem;
     border-radius: .8rem;
     height: 100%;
+    box-shadow: .2rem .5rem 1.2rem var(--gray);
   }
 
   .img-container {
@@ -159,7 +160,7 @@ can't get button to work again
     }
 
     h1 {
-      font-size: 1.2rem;
+      font-size: 1.25rem;
     }
 
     .card-text {
@@ -175,7 +176,6 @@ can't get button to work again
       position: absolute;
       width: 16rem;
       color: var(--gray);
-      /* margin: 0 .2rem 0 0; */
       border-radius: 1rem;
       z-index: 2;
       top: 9rem;
@@ -187,7 +187,6 @@ can't get button to work again
       flex-direction: row;
       justify-content: center;
       letter-spacing: .4rem;
-      /* padding: .5rem 2rem; */
     }
 
     .desktop-clicked img {
@@ -207,8 +206,4 @@ can't get button to work again
       display: flex;
       left: 6.5rem
     }
-
-    /* .desktop-clicked p {
-      line-height: normal;
-    } */
   }
