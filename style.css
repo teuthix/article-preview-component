@@ -83,9 +83,6 @@ can't get button to work again
   .clicked {
     background-color: var(--darkest-gray);
     border-radius: 0 0 .8rem .8rem;
-    z-index: 1;
-    overflow: hidden;
-    display: none;
     height: 3rem;
   }
 
@@ -123,10 +120,6 @@ can't get button to work again
     border-radius: 50%;
   }
 
-  /* .share-container {
-    display: none;
-  } */
-
   .hidden {
     display: none;
   }
@@ -144,6 +137,10 @@ can't get button to work again
         width: 45rem;
         display: flex;
         flex-direction: row;
+    }
+
+    .clicked {
+      display: none;
     }
 
     .img-container {
